@@ -9,7 +9,7 @@
 		<appender name="CONSOLE"
 			class="ch.qos.logback.core.ConsoleAppender">
 			<layout>
-				<Pattern>%d{HH:mm:ss} %p %X{TRACE-ID} %c - %m%n</Pattern>
+				<Pattern>%d{HH:mm:ss} %p [%X{traceId}] %c - %m%n</Pattern>
 			</layout>
 		</appender>
 	</root>

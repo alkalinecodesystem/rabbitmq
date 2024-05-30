@@ -22,7 +22,7 @@ public class TestRabbitmqController {
 	@GetMapping("/rabbitmq")
 	void testQueueDemo() {
 		try {
-			logger.info("testQueue");
+			logger.info("start - testQueue");
 
 			demoService.publisherMethod();
 			
@@ -30,7 +30,7 @@ public class TestRabbitmqController {
 			logger.error(ex.getMessage());
 			throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, ex.getMessage(), ex);
 		} finally {
-			logger.info("testQueue");
+			logger.info("end - testQueue");
 		}
 
 	}

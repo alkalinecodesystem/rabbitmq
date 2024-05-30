@@ -8,6 +8,9 @@ sudo docker exec -ti rabbitmq /bin/bash <br />
 rabbitmqctl add_user test test <br />
 rabbitmqctl set_user_tags test administrator <br />
 rabbitmqctl set_permissions -p / test ".*" ".*" ".*" <br />
+
+## Delete user guest
+rabbitmqctl delete_user guest <br />
 ## Access to management GUI
 http://localhost:15672 <br />
 ### start stop container
